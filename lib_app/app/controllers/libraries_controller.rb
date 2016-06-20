@@ -17,16 +17,4 @@ def create
   redirect_to "/libraries"
 end
 
-def show
-  @library = Library.find(params[:id])
-  render :show
-end
-
-def destroy
-  @library = Library.find(params[:id])
-  @library.destroy
-
-  redirect_to "/libraries"
-end
-
 end
